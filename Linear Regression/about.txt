@@ -1,0 +1,1 @@
+The goal of this project was to implement linear regression algorithms to examine predictive trends based on provided bodyfat data.
