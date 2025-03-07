@@ -1,0 +1,9 @@
+Recently we were introduced to the 8-queens problem.  
+
+Place 8 queens on a chessboard such that no queen is attacking any other queen.
+
+Recall that in the game of chess, queens attack any piece they can "see" (i.e., there is nothing between the queen and the attacking piece) in the same row, column, or diagonal.
+
+In this project, the goal is to generalize this problem to a board of arbitrary (square) size and the equivalent number of queens and add a "static point" to the board. It means that at any time, there must be a queen on the static point. We only have to place the other N-1 queens on the board.
+
+Given the size of the board (N > 0) and location of the static point (0 <= static_x < N and 0 <= static_y < N), we will implement a hill-climbing algorithm to solve the problem.
