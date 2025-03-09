@@ -1,0 +1,1 @@
+The goal of this project is to implement a handwriting analysis program using Principal Component Analysis (PCA)
