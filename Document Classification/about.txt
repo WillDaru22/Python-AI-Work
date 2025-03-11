@@ -1,0 +1,25 @@
+A few issues persist with this project.
+
+This project will be reading in a corpus (a collection of documents) with two possible labels and training a classifier to determine which label a query document is more likely to have.
+
+Here's the twist: the corpus is created from CS essays about AI from 2016 and 2020 on the same topic. Based on training data from each, the project will be predicting whether an essay was written in 2020 or 2016. (The classifier will probably be bad at this! It's okay, the goal is to find a very subtle difference here.)
+
+For this program, the goal is to write the following seven (7) Python functions:
+
+train(training_directory, cutoff) -- load the training data, estimate the prior distribution P(label) and class conditional distributions , return the trained model
+
+create_vocabulary(directory, cutoff) -- create and return a vocabulary as a list of word types with counts >= cutoff in the training directory
+
+create_bow(vocab, filepath) -- create and return a bag of words Python dictionary from a single document
+
+load_training_data(vocab, directory) -- create and return training set (bag of words Python dictionary + label) from the files in a training directory
+
+prior(training_data, label_list) -- given a training set, estimate and return the prior probability P(label) of each label
+
+p_word_given_label(vocab, training_data, label) -- given a training set and a vocabulary, estimate and return the class conditional distribution  over all words for the given label using smoothing
+
+classify(model, filepath) -- given a trained model, predict the label for the test document (see below for implementation details including the return value)
+
+this high-level function should also use create_bow(vocab, filepath)
+
+Additional helper functions are allowed.  The submitted code should not produce any additional printed output.
