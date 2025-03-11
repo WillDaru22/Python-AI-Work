@@ -8,4 +8,4 @@ Given these rules for the puzzle, this project generates a state space and solve
 
 Note that not all 8-tile puzzles are solvable. This project is currently designed to only solve puzzles that are solvable.
 
-Unfortunately, there is likely an old bug in the code in either the testing file itself or the puzzle solver causing it to not quite function as expected, though no fixes are planned at this time.
+Unfortunately, there is likely an old bug in the code either during testing and the tests themselves or the puzzle solver causing it to not quite function as expected, though no fixes are planned at this time.
