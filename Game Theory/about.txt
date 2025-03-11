@@ -1,0 +1,13 @@
+The goal of is project is to develop an AI game player for a modified version of the game called Teeko. For ease, we will call this modified version Teeko2.
+
+As you're probably aware, there are certain kinds of games that computers are very good at, and others where even the best computers will routinely lose to the best human players. The class of games for which we can predict the best move from any given position (with enough computing power) is called Solved Games. Teeko is an example of such a game, and the goal of this project is to implement a computer player for a modified version of it.
+
+How to play Teeko
+Teeko is very simple:
+
+It is a game between two players on a 5x5 board. Each player has four markers of either red or black. Beginning with black, they take turns placing markers (the "drop phase") until all markers are on the board, with the goal of getting four in a row horizontally, vertically, or diagonally, or in a 2x2 box.
+
+If after the drop phase neither player has won, they continue taking turns moving one marker at a time -- to an adjacent space only! (Note this includes diagonals, not just left, right, up, and down one space.) -- until one player wins.
+
+How to play Teeko2
+The Teeko2 rules are almost identical to those of Teeko but we will exchange a rule. Specifically, we remove the 2x2 box winning condition and replace it with a diamond winning condition. Any diamond is defined by an empty center position surrounded by 4 markers on the spaces above, below, to the right, and to the left of the center. Mathematically, if (i,j) is the center of a diamond, then it must be that (i,j) is empty and that there is a marker of the appropriate color on each of (i+1,j), (i-1,j), (i,j+1), and (i,j-1). Visually, this makes a diamond shape on the board.
