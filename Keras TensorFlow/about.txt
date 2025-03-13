@@ -1,0 +1,22 @@
+One of the reasons we're using Python is because it has some very powerful machine learning tools, and home-brewing every machine learning solution is not only time-consuming but potentially error-prone (as you may have discovered). It's very useful in practice to use packages like scikit-learn, TensorFlow, and even just SciPy and NumPy to support your projects, as their utilities have been developed by a team of professionals and undergo rigorous testing and verification.
+
+In this project, we'll be exploring the Keras package in TensorFlow and its uses in deep learning.
+
+In this program, the goal is to be using Tensorflow Keras to build a simple deep learning model for predicting labels of images of handwritten images. You will learn how to build, train, evaluate models, and make predictions on test data using this model. This program asks you to implement the following functions in Python.
+
+get_dataset(training=True) —
+Input: an optional boolean argument (default value is True for training dataset)
+Return: two NumPy arrays for the train_images and train_labels
+
+print_stats(train_images, train_labels) — This function will print several statistics about the data
+Input: the dataset and labels produced by the previous function; does not return anything
+
+build_model() — takes no arguments and returns an untrained neural network model
+train_model(model, train_images, train_labels, T) — takes the model produced by the previous function and the dataset and labels produced by the first function and trains the data for T epochs; does not return anything
+
+evaluate_model(model, test_images, test_labels, show_loss=True) — takes the trained model produced by the previous function and the test image/labels, and prints the evaluation statistics as described below (displaying the loss metric value if and only if the optional parameter has not been set to False); does not return anything
+
+predict_label(model, test_images, index) — takes the trained model and test images, and prints the top 3 most likely labels for the image at the given index, along with their probabilities; does not return anything
+
+You are free to implement any other utility function. But we will only be testing the functionality using the above 6 APIs, so make sure that each of them follows the exact function signature and returns.
+You can also use helper methods to visualize the images from the MNIST dataset for a better understanding of the dataset and the labels. But it is totally optional.
