@@ -20,3 +20,5 @@ predict_label(model, test_images, index) — takes the trained model and test im
 
 You are free to implement any other utility function. But we will only be testing the functionality using the above 6 APIs, so make sure that each of them follows the exact function signature and returns.
 You can also use helper methods to visualize the images from the MNIST dataset for a better understanding of the dataset and the labels. But it is totally optional.
+
+Addendum from recent upload:  Training data for this project may have been hosted externally as I have been presently unable to locate local sources of it.
